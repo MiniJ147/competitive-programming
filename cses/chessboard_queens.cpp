@@ -32,15 +32,6 @@ void search(int x, int y, vector<vector<bool>> curr){
         y2+=1; 
     }
 
-    /*for(int i=0; i<SIZE; i++){
-        for(int j=0; j<SIZE; j++){
-            cout << curr[i][j] << ' ';
-        }
-        cout<<endl;
-    }
-
-    cout << endl << endl;*/
-
     for(int i=0; i<SIZE; i++){
         search(i,y+1,curr);
     }
@@ -57,12 +48,6 @@ int main(){
     for(int i=0; i<SIZE; i++){
         search(i,0,board);
     }
-    /*for(int i=0; i<SIZE; i++){
-        for(int j=0; j<SIZE; j++){
-            cout << board[i][j] << ' ';
-        }
-        cout<<endl;
-    }*/
     cout << cnt;
     return 0;
 }
